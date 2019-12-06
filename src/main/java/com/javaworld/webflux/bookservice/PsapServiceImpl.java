@@ -20,8 +20,8 @@ public class PsapServiceImpl implements PsapService {
     }
 
     @Override
-    public Mono<Psap> findByState(String state) {
-        return null;
+    public Flux<Psap> findAllByProperties_STATE(String state) {
+        return psapRepository.findAllByProperties_STATE(state);
     }
 
     @Override

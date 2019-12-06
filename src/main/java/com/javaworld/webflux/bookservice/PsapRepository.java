@@ -6,5 +6,6 @@ import reactor.core.publisher.Flux;
 
 public interface PsapRepository extends ReactiveMongoRepository<Psap, String> {
 
+    Flux<Psap> findAllByProperties_STATE(String state);
 
 }

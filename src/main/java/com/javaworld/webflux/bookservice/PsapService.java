@@ -9,7 +9,7 @@ public interface PsapService {
 
     Mono<Psap> findById(String id);
 
-    Mono<Psap> findByState(String state);
+    Flux<Psap> findAllByProperties_STATE(String state);
 
     Flux<Psap> findAll();
 
